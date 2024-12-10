@@ -1,0 +1,19 @@
+/*projects*/
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .project1,
+  .project2 {
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

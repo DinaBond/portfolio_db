@@ -1,0 +1,264 @@
+/*Opening section*/
+
+#hero {
+  background: url("../images/head-background-big.png") no-repeat;
+  height: 240px;
+  width: 612px 0px;
+
+  margin: 70px auto;
+  display: block;
+}
+/*About Me*/
+.button-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #dff469;
+  color: #002c9b;
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 9px;
+}
+
+.button-about:hover {
+  opacity: 60%;
+  transition: all 200ms ease-in;
+}
+
+.desciplines-list {
+  padding: 0px;
+}
+
+.desciplines-list li {
+  list-style-type: none;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-icons-about {
+  text-align: center;
+}
+
+.social-icons-about img {
+  margin: 15px;
+  width: 80px;
+}
+
+/*Video*/
+.video-line {
+  align-items: left;
+  border: 1px solid #dff469;
+  width: 30px;
+  height: 1px;
+  display: block;
+  margin: 30px 10px 0px 0px;
+}
+.video-container {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+
+/*Contact form*/
+.contact-line {
+  border: 1px solid #dff469;
+  width: 15px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: center; /* Centers the content horizontally */
+  gap: 1px; /* Adds spacing between lines and text */
+}
+
+/* */
+.contact-me-section {
+  position: relative;
+  overflow: visible;
+}
+
+.contact-form {
+  padding: 10px 20px;
+  color: #0039c8;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+textarea {
+  margin: 10px 0px 0px 0px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  font: inherit;
+  width: 100%;
+  color: #002c9b;
+}
+
+.contact-form input::placeholder {
+  color: #638cf2;
+  opacity: 0.8;
+}
+
+.contact-form textarea::placeholder {
+  color: #638cf2;
+  opacity: 0.8;
+}
+
+.contact-form textarea {
+  height: 250px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  height: 65px;
+  margin: 0px 0px 150px;
+}
+
+.contact-buttons:hover {
+  color: aquamarine;
+  transition: all 200ms ease-in;
+  opacity: 60%;
+}
+.contact-form input[type="submit"] {
+  font-weight: bold;
+  padding: 12px 28px;
+  background: #dff469;
+  color: #0039c8;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 400px;
+  margin-left: -60px;
+  height: 65px;
+
+  border-radius: 4px;
+}
+
+.contact-social-medias {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.contact-social-medias img {
+  margin: 0px 25px;
+}
+
+.contact-email {
+  font-size: 23px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.out-name {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /*OPENING SECTION*/
+
+  .arrow-opening1,
+  .arrow-opening2 {
+    display: block;
+    position: absolute;
+  }
+
+  .arrow-opening1 {
+    left: -25px;
+    top: 180px;
+  }
+
+  .arrow-opening2 {
+    top: 150px;
+    left: 80%;
+    right: 0;
+  }
+
+  .arrow-about {
+    display: none;
+  }
+
+  /*ABOUT ME*/
+
+  .desciplines-list {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .desciplines-list li {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .desciplines-list {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*OPENING SECTION*/
+  #hero {
+    background: url("../images/background-desktop.png") no-repeat !important;
+    width: 1920px;
+    height: 760px;
+  }
+
+  .about-me-section {
+    overflow: visible;
+  }
+
+  /*ABOUT ME*/
+
+  .desciplines-list li {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .social-icons-about {
+    text-align: left;
+  }
+
+  /*CONTACT*/
+
+  .contact-social-medias {
+    height: 100px;
+  }
+
+  .contact-social-medias img {
+    width: 80px;
+  }
+
+  .contact-form input:first-child {
+    margin-top: 10px;
+  }
+
+  .contact-form form {
+    height: 485px;
+  }
+
+  .contact-form input {
+    height: 25px;
+    margin: 10px 0 0 0;
+  }
+}
