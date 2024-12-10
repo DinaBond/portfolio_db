@@ -1,5 +1,8 @@
 /*Opening section*/
-
+.projects :hover {
+  opacity: 60%;
+  transition: all 200ms ease-in;
+}
 #hero {
   background: url("../images/head-background-big.png") no-repeat;
   height: 240px;
