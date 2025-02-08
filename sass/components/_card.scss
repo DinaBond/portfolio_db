@@ -1,5 +1,42 @@
 /*projects*/
 
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  color: #002c9b;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+  .project-card-top-info {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+
+  .project-name {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects {
     display: flex;
