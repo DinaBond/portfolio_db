@@ -196,7 +196,7 @@ $stmt = null;
           >
             <h1>Name*</h1>
           </div>
-          <form action="sendmail.php" method="POST">
+          <form id="contactForm">
             <input name="name" type="text" placeholder="NAME" />
             <div
               class="contact-form col col-span-full l-col-start-5 l-col-end-9 out-name"
@@ -206,7 +206,7 @@ $stmt = null;
             <input
               name="email"
               type="text"
-              required
+              
               placeholder="EMAIL"
             />
             <div
@@ -217,7 +217,7 @@ $stmt = null;
             <input
               name="number"
               type="text"
-              required
+              
               placeholder="PHONE"
             />
             <div
@@ -232,6 +232,7 @@ $stmt = null;
             <div class="contact-buttons col-span-full">
               <input name="submit" type="submit" value="Send a Message" />
             </div>
+            <section id="feedback"><p>*Please fill out all required sections</p></section>
           </form>
         </div>
       </section>
@@ -263,6 +264,7 @@ $stmt = null;
     </footer>
 
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="js/contact-form.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

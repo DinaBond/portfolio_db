@@ -29,7 +29,6 @@ if (empty($email)) {
 }
 
 if (empty($errors)) {
-    try {
         $query = "INSERT INTO contact (full_name, email, number, message) VALUES (?,?,?,?)";
         $stmt = $connect->prepare($query);
        
@@ -39,24 +38,18 @@ if (empty($errors)) {
         $stmt->bindParam(4, $msg, PDO::PARAM_STR);
 
         if ($stmt->execute()) {
-            $to = 'd_bondarchuk@fanshaweonline.ca';
-            $subject = 'Message from your Portfolio Website!';
-            $message = "You have received a new contact form submission:\n\n";
-            $message .= "Name: " . $name . " \n";
-            $message .= "Email: " . $email . "\n\n";
+            // $to = 'd_bondarchuk@fanshaweonline.ca';
+            // $subject = 'Message from your Portfolio Website!';
+            // $message = "You have received a new contact form submission:\n\n";
+            // $message .= "Name: " . $name . " \n";
+            // $message .= "Email: " . $email . "\n\n";
 
-            mail($to, $subject, $message);
-            header('Location: thank_you.html');
-            exit;
-        } else {
-            echo "Database insertion failed!";
-        }
-    } catch (PDOException $e) {
-        echo "Database error: " . $e->getMessage();
-    }
+            // mail($to, $subject, $message);
+       echo json_encode(array("message" => "Thank you for your message!"));
+        } 
+
+        $stmt = null;
 } else {
-    foreach ($errors as $error) {
-        echo $error . '<br>';
-    }
+   echo json_encode(array("errors" => array_values($errors)));
 }
 ?>

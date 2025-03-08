@@ -130,7 +130,7 @@ textarea {
   align-items: center;
   width: 470px;
   height: 65px;
-  margin: 0px 0px 150px;
+  margin: 0px 0px 10px;
 }
 
 .contact-buttons:hover {
@@ -176,6 +176,11 @@ textarea {
   text-align: left;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+#feedback {
+  font-size: 15px;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
